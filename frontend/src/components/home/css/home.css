@@ -1,0 +1,102 @@
+.home .home-header {
+  background: url(../../../img/bg.webp) no-repeat 100% 100%;
+  background-size: cover;
+  height: 430px;
+  position: relative;
+}
+
+.home .home-header::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.home .home-header h1 {
+  font-family: boldd;
+  position: relative;
+  z-index: 1;
+  padding: 20px 0 45px 20px;
+}
+
+.home .home-header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home .home-header .home-center-content {
+  position: relative;
+  z-index: 1;
+}
+
+.home .home-header .home-center-content p {
+  font-family: boldd;
+  color: #fff;
+  font-size: 35px;
+  width: 650px;
+  line-height: 1.5;
+  margin: 0 auto 20px auto;
+}
+
+.home .home-header .home-center-content .home-search {
+  background: #fff;
+  width: 640px;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 60px;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .home-header .home-center-content .home-search input {
+  height: 100%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  width: 90%;
+  border-radius: 5px;
+  padding: 0 0 0 15px;
+  color: #1C2833;
+  font-size: 22px;
+}
+
+.home .home-header .home-center-content .home-search input::-webkit-input-placeholder {
+  font-size: 22px;
+  font-family: light;
+}
+
+.home .home-header .home-center-content .home-search input:-ms-input-placeholder {
+  font-size: 22px;
+  font-family: light;
+}
+
+.home .home-header .home-center-content .home-search input::-ms-input-placeholder {
+  font-size: 22px;
+  font-family: light;
+}
+
+.home .home-header .home-center-content .home-search input::placeholder {
+  font-size: 22px;
+  font-family: light;
+}
+
+.home .home-header .home-center-content .home-search .home-search-button {
+  cursor: pointer;
+  width: 10%;
+  position: relative;
+}
+
+.home .home-header .home-center-content .home-search .home-search-button .home-search-icon {
+  position: absolute;
+  color: #1C2833;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+/*# sourceMappingURL=home.css.map */
