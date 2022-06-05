@@ -5,6 +5,7 @@ import './css/app.css'
 
 const Home = lazy(() => import(`./components/home/home.js`))
 const Form = lazy(() => import(`./components/form/form.js`))
+const ImageDetails = lazy(() => import(`./components/image_details/imageDetails.js`))
 
 const App = () => {
 	return(
@@ -14,6 +15,7 @@ const App = () => {
 					<Routes>
 						<Route path="/" exact element={<Home />} />
 						<Route path="/form/" exact element={<Form />} />
+						<Route path="/image/:id" exact element={<ImageDetails />} />
 					</Routes>
 				</Suspense>
 			</BrowserRouter>
