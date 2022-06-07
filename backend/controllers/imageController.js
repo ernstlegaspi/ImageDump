@@ -1,10 +1,22 @@
 import ImageModel from '../models/imageModel.js'
 
-export const getImage = async (req, res) => {
+export const getImages = async (req, res) => {
 	try {
 		const getDataImage = await ImageModel.find()
 		
 		res.status(200).json(getDataImage)
+	}
+	catch(e) {
+		res.status(404).json({ message: e.message })
+	}
+}
+
+export const getImage = async (req, res) => {
+	try {
+		const { id } = req.params
+		const getImage = await ImageModel.findById(id)
+		
+		res.status(200).json(getImage)
 	}
 	catch(e) {
 		res.status(404).json({ message: e.message })
