@@ -14,14 +14,32 @@
   top: 0;
 }
 
-.home .home-header h1 {
-  font-family: boldd;
+.home .home-header .home-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   z-index: 1;
-  padding: 20px 0 45px 20px;
+  padding: 20px 20px 45px 20px;
 }
 
-.home .home-header h1 a {
+.home .home-header .home-nav h1 {
+  font-family: boldd;
+}
+
+.home .home-header .home-nav h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home .home-header .home-nav p {
+  font-family: light;
+}
+
+.home .home-header .home-nav p a {
   color: #fff;
   text-decoration: none;
 }

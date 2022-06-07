@@ -17,7 +17,10 @@ const Home = () => {
 	return(
 		<div className="home">
 			<div className="home-header">
-				<h1><a href="/">ImageDump</a></h1>
+				<div className="home-nav">
+					<h1><a href="/">ImageDump</a></h1>
+					<p><a href="/login">Login</a></p>
+				</div>
 				<div className="home-center-content">
 					<p>The best free stock photos, royalty free images & videos shared by creators.</p>
 					<div className="home-search">

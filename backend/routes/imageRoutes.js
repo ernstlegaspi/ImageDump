@@ -1,10 +1,11 @@
 import express from 'express'
 
-import { getImage, postImage } from '../controllers/imageController.js'
+import { getImage, getImages, postImage } from '../controllers/imageController.js'
 
 const router = express.Router()
 
-router.get(`/`, getImage)
+router.get(`/`, getImages)
+router.get(`/:id`, getImage)
 router.post(`/`, postImage)
 
 export default router

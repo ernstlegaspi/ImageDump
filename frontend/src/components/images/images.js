@@ -19,7 +19,7 @@ const Images = () => {
 				{
 					image.map(_image => {
 						return <ImageListItem onClick={() => getImageId(_image._id)} className="images-image" key={_image.image}>
-							<img src={_image.image} loading="lazy" alt={_image.title}  />
+							<img src={_image.image} loading="lazy" alt={_image.title} />
 							<ImageListItemBar title={_image.title} />
 						</ImageListItem>
 					})
