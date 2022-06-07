@@ -16,15 +16,29 @@ $black: #1C2833;
 			top: 0;
 		}
 
-		h1 {
-			font-family: boldd;
+		.home-nav {
+			display: flex;
+			justify-content: space-between;
 			position: relative;
 			z-index: 1;
-			padding: 20px 0 45px 20px;
+			padding: 20px 20px 45px 20px;
 
-			a {
-				color: #fff;
-				text-decoration: none;
+			h1 {
+				font-family: boldd;
+	
+				a {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+
+			p {
+				font-family: light;
+				
+				a {
+					color: #fff;
+					text-decoration: none;
+				}
 			}
 		}
 

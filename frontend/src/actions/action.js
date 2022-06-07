@@ -1,6 +1,6 @@
 import * as api from '../api/api'
 
-import { GET_IMAGES, ADD_IMAGE } from "../constants/constants";
+import { GET_IMAGES, GET_IMAGE, ADD_IMAGE } from "../constants/constants";
 
 export const getImages = () => async dispatch => {
 	try {
@@ -10,6 +10,17 @@ export const getImages = () => async dispatch => {
 	}
 	catch(e) {
 		console.log(`GET IMAGES: ${e}`)
+	}
+}
+
+export const getImage = id => async dispatch => {
+	try {
+		const { data } = await api.getImage(id)
+
+		dispatch({ type: GET_IMAGE, payload: data })
+	}
+	catch(e) {
+		console.log(`GET IMAGE: ${e}`)
 	}
 }
 
